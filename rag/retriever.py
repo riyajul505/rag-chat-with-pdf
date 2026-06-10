@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import Chroma
-from langchain.schema import BaseRetriever
+from langchain_core.retrievers import BaseRetriever
 
 
 def build_retriever(vectorstore: Chroma) -> BaseRetriever:

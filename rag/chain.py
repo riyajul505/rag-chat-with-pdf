@@ -3,7 +3,7 @@ import os
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferWindowMemory
 from langchain_openai import ChatOpenAI
-from langchain.schema import BaseRetriever
+from langchain_core.retrievers import BaseRetriever
 
 from utils.helpers import LLM_MODEL, DEEPSEEK_BASE_URL
 
