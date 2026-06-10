@@ -72,7 +72,7 @@ with st.sidebar:
     if st.button("Clear chat", use_container_width=True):
         st.session_state.messages = []
         if st.session_state.chain:
-            st.session_state.chain.memory.clear()
+            st.session_state.chain.clear_history()
         st.rerun()
 
 
